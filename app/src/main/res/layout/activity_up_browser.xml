@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            style="@style/status_view_style"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            style="@style/base_match_wrap"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                style="@style/base_wrap_wrap"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_15"
+                android:src="@mipmap/back_black" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/base_wrap_wrap"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="隐私政策"
+                android:textColor="@color/blackText"
+                android:textSize="@dimen/tv_content" />
+
+       <!--     <TextView
+                android:id="@+id/tv_delete"
+                style="@style/base_wrap_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_descript" />-->
+
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/b_progressBarLoading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <WebView
+            android:id="@+id/b_webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

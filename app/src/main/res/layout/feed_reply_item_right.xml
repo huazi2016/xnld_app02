@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   style="@style/base_match_wrap"
+    android:layout_gravity="end"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="end"
+    android:orientation="horizontal">
+    <!--    android:background="#F6F6F6"-->
+
+<!--    <android.support.constraint.ConstraintLayout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_weight="1"
+        android:background="@drawable/feed_bg_mine"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:layout_gravity="end">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="end"
+                    android:text="我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题我们正在解决您反馈的问题"
+                    android:textColor="#262626"
+                    android:textSize="15sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pic_recyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:text="2020-4-27 10:35"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/feed_me" />
+</LinearLayout>

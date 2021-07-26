@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_white_bg8"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/erro"
+           android:layout_marginTop="@dimen/dp_22"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="注 销 账 号"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:lineSpacingExtra="8dp"
+            android:text="        尊敬的用户请熟知：注销账号后应用内所有的个人数据将会被清空，包括付费获得的会员等一切数据，且无法恢复，请您谨慎操作。如因注销账号造成一切损失，我们不承担任何责任，您确定仍要注销账号吗？"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:padding="@dimen/dp_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/tv_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/destroy"
+                android:gravity="center"
+                android:textColor="#909090"
+                android:layout_marginRight="2dp"
+                android:padding="@dimen/dp_10"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+            <Button
+                android:layout_marginLeft="2dp"
+                android:id="@+id/tv_cancel"
+                android:padding="@dimen/dp_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/destroy_btn"
+                android:text="我再想想"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

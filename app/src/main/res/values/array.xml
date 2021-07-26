@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="msg_mode_chongfu">
+        <item>每次发送</item>
+        <item>一天内发送一次</item>
+        <item>三天内发送一次</item>
+        <item>七天内发送一次</item>
+        <item>十五天内发送一次</item>
+        <item>三十天内发送一次</item>
+    </string-array>
+    <string-array name="feed_back_type">
+        <item>程序BUG</item>
+        <item>使用问题</item>
+        <item>建议</item>
+        <item>充值问题</item>
+        <item>其他</item>
+    </string-array>
+
+
+
+</resources>

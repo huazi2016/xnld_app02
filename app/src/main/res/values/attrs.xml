@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <declare-styleable name="UpdateAppNumberProgressBar">
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_size" format="dimension"></attr>
+        <attr name="progress_reached_bar_height" format="dimension"></attr>
+        <attr name="progress_unreached_bar_height" format="dimension"></attr>
+        <attr name="progress_text_offset" format="dimension"></attr>
+        <attr name="progress_text_visibility" format="integer"></attr>
+        <attr name="progress_current" format="integer"></attr>
+        <attr name="progress_max" format="integer"></attr>
+    </declare-styleable>-->
+    <declare-styleable name="UpdateAppNumberProgressBar">
+        <attr format="integer" name="progress_current"/>
+        <attr format="integer" name="progress_max"/>
+        <attr format="color" name="progress_unreached_color"/>
+        <attr format="color" name="progress_reached_color"/>
+        <attr format="dimension" name="progress_reached_bar_height"/>
+        <attr format="dimension" name="progress_unreached_bar_height"/>
+        <attr format="dimension" name="progress_text_size"/>
+        <attr format="color" name="progress_text_color"/>
+        <attr format="dimension" name="progress_text_offset"/>
+        <attr format="enum" name="progress_text_visibility">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--CircleCheckBox相关-->
+    <declare-styleable name="CircleCheckBox">
+        <!--内圆半径-->
+        <attr name="radius_size" format="dimension" />
+        <!--圆形的padding-->
+        <attr name="padding_size" format="dimension" />
+        <!--对号大小-->
+        <attr name="tick_size" format="dimension" />
+        <!--未选中时，边框大小-->
+        <attr name="stroke_size" format="dimension" />
+        <!--对号的颜色-->
+        <attr name="tickColor" format="color" />
+        <!--选中时，圆的颜色-->
+        <attr name="checkedColor" format="color" />
+        <!--未选中时，圆的颜色-->
+        <attr name="uncheckedColor" format="color" />
+        <!--未选中时，圆的边框的颜色-->
+        <attr name="strokeColor" format="color" />
+    </declare-styleable>
+
+    <!--圆形图片-->
+    <declare-styleable name="round_imageview">
+        <attr name="border_color" format="color"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="circle" format="boolean"/>
+    </declare-styleable>
+</resources>

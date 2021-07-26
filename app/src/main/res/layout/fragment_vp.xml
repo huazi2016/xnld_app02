@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout-->
+<!--        style="@style/base_match_wrap"-->
+<!--        android:layout_marginVertical="@dimen/dp_10"-->
+<!--        android:layout_marginLeft="@dimen/dp_10"-->
+<!--        android:layout_marginRight="@dimen/dp_10"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:paddingBottom="20dp"-->
+<!--        app:qmui_radius="16dp">-->
+<!--   -->
+<!--    </com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/r_viewpager"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

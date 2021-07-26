@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/base_match_match"
+    android:background="@color/root_bg"
+    android:orientation="vertical">
+
+    <View
+
+        style="@style/status_view_style"
+        android:background="@color/title_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/base_match_wrap"
+        android:background="@color/title_color">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_back"
+            style="@style/base_wrap_wrap"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_15"
+            android:src="@mipmap/back_whit" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/base_wrap_wrap"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="选择应用"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_content" />
+
+
+    </RelativeLayout>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:visibility="gone"
+        android:id="@+id/magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal"
+         />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zxqy.xunilaidian">
+    <!-- 指定加入安装快捷方式的权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 查询快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- =====================https://blog.csdn.net/u011484134/article/details/80443177======================= -->
+    <uses-permission android:name="com.google.android.apps.nexuslauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lenovo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.bbk.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="cn.nubia.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="cn.nubia.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="cn.nubia.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="cn.nubia.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="net.oneplus.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.oneplus.launcher.permission.WRITE_SETTINGS" />
+    <!--
+若您的应用已经提升 targetSdkVersion 到 30 或以上，请在 AndroidManifest.xml 中加入以下内容，
+    并更新 Gradle 插件版本，以符合 Android应用可见性机制 的要求
+    -->
+    <queries>
+
+        <!-- com.blankj.utilcode SDK检测虚拟机 -->
+        <!--
+           <intent>
+               <action android:name="android.intent.action.DIAL" />
+           </intent>
+        -->
+
+
+        <!-- 微信支付SDK -->
+        <package android:name="com.tencent.mm" />
+        <!-- 支付宝支付SDK -->
+        <package android:name="com.eg.android.AlipayGphone" />
+        <package android:name="hk.alipay.wallet" />
+        <package android:name="com.tencent.mobileqq" />
+        <package android:name="com.tencent.wework" />
+        <package android:name="com.qzone" />
+        <package android:name="com.sina.weibo" />
+        <package android:name="com.alibaba.android.rimet" />
+        <package android:name="com.donews.renren.android" />
+        <package android:name="com.douban.frodo" />
+        <package android:name="com.youdao.note" />
+        <package android:name="im.yixin" />
+        <package android:name="com.yinxiang" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.linkedin.android" />
+    </queries>
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.CallPageActivity"></activity>
+        <activity android:name=".main.WelcomeActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <!--
+   android:exported="true"  这个标签是用来表示是否能够被其他应用程序组件调用或跟它交互
+        android:label="主页面"
+        -->
+        <activity
+            android:name=".main.MainActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTranslucent">
+
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="登录页面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedBackListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="用户反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedBackDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="用户反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedImgShowActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="用户反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedReplyActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="用户反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedBackAddActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="用户反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BrowserUsActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="用户反馈"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="登录页面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ContentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="内容界面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PreviewActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="内容界面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AnimationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="内容界面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="关于界面"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="微信登录"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.zxqy.reseticon"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- ==========================================================QQ登录==================================================== -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="101431358" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- ==========================================================QQ登录==================================================== -->
+        <activity
+            android:name=".activity.MemberCenterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="会员支付"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".service.VirtualCallService" />
+
+        <activity
+            android:name=".main.my.UserCenterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="个人中心"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.WelcomeShortActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="桌面快捷方式启动页"
+            android:screenOrientation="portrait">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
+             </intent-filter>
+            -->
+
+        </activity> <!-- 更新   知乎图片选择器，适配7.0系统 -->
+        <!--
+  <provider
+              android:name="androidx.core.content.FileProvider"
+              android:authorities="${applicationId}.fileprovider"
+              android:exported="false"
+              android:grantUriPermissions="true"
+              tools:replace="android:authorities">
+              <meta-data
+                  android:name="android.support.FILE_PROVIDER_PATHS"
+                  android:resource="@xml/file_paths"
+                  tools:replace="android:resource" />
+          </provider>
+        -->
+        <!-- 创建桌面快捷方式广播的接收者 -->
+        <!--
+ <receiver
+             android:name="com.ztzh.reseticon.main.ShortcutReceriver"
+             android:enabled="true"
+             android:exported="true">
+             <intent-filter android:priority="1100">
+                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
+             </intent-filter>
+         </receiver>
+        -->
+        <service
+            android:name=".service.VideoWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
+
+            <!-- 为动态壁纸配置intent-filter -->
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <!-- 为动态壁纸配置meta-data -->
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/livewallpaper" />
+        </service> <!-- 更新   知乎图片选择器，适配7.0系统 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+        </provider>
+    </application>
+
+</manifest>

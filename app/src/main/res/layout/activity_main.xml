@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/base_match_match"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_all"
+        style="@style/base_match_match"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragmentContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.ashokvarma.bottomnavigation.BottomNavigationBar
+            android:id="@+id/mBottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white" />
+    </LinearLayout>
+</LinearLayout>

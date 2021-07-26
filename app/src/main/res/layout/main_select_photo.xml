@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/base_match_wrap"
+
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/base_match_wrap"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_white_bg8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_hot_icn"
+            style="@style/base_match_wrap"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_hot_icn"
+                style="@style/base_wrap_wrap"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@mipmap/icn_hot"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_10"
+                android:text="热门图标"
+                android:textColor="#2e2e2e"
+                android:textSize="@dimen/tv_descript" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="#666666" />
+
+        <LinearLayout
+            android:id="@+id/ll_picture"
+            style="@style/base_match_wrap"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_picture"
+                style="@style/base_wrap_wrap"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@mipmap/icn_picture"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_10"
+                android:text="手机相册"
+                android:textColor="#2e2e2e"
+                android:textSize="@dimen/tv_descript" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="#666666" />
+
+        <LinearLayout
+            android:id="@+id/ll_select_app"
+            style="@style/base_match_wrap"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_select_app"
+                style="@style/base_wrap_wrap"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@mipmap/icn_app_soft"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_10"
+                android:text="手机软件"
+                android:textColor="#2e2e2e"
+                android:textSize="@dimen/tv_descript" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_text_app"
+            style="@style/base_match_wrap"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_text_app"
+                style="@style/base_wrap_wrap"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/text"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_10"
+                android:text="文字设定"
+                android:textColor="#2e2e2e"
+                android:textSize="@dimen/tv_descript" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_later_app"
+            style="@style/base_match_wrap"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_later_app"
+                style="@style/base_wrap_wrap"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/later"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_10"
+                android:text="近期使用"
+                android:textColor="#2e2e2e"
+                android:textSize="@dimen/tv_descript" />
+        </LinearLayout>
+        <!--    <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="#666666" />-->
+
+        <!--    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">-->
+
+        <!-- <Button
+             android:id="@+id/dialog_bt_dis"
+             android:layout_width="0dp"
+             android:layout_height="48dp"
+             android:layout_weight="1"
+             android:background="@drawable/dialog_bt_left_bg"
+             android:gravity="center"
+             android:text="取消"
+             android:textColor="#6d6d6d"
+             android:textSize="18sp" />-->
+
+        <!--        <View
+                    android:layout_width="0.5px"
+                    android:layout_height="match_parent"
+                    android:background="#666666" />-->
+
+        <!--      <Button
+                  android:id="@+id/dialog_bt_ok"
+                  android:layout_width="0dp"
+                  android:layout_height="48dp"
+                  android:layout_weight="1"
+                  android:background="@drawable/dialog_bt_right_bg"
+                  android:gravity="center"
+                  android:text="确定"
+                  android:textColor="@color/btn_red"
+                  android:textSize="18sp" />-->
+        <!--    </LinearLayout>-->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        style="@style/base_wrap_wrap"
+        android:layout_marginTop="@dimen/dp_20"
+        android:padding="@dimen/dp_30"
+        android:src="@mipmap/icn_close" />
+
+</LinearLayout>

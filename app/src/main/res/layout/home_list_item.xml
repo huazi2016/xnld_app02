@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/base_match_wrap"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/iv_icn"
+        style="@style/base_wrap_wrap"
+        android:src="@mipmap/header" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/base_wrap_wrap"
+        android:layout_marginTop="6dp"
+        android:text="短信模版"
+        android:textColor="@color/blackText"
+        android:textSize="@dimen/tv_remark" />
+
+</LinearLayout>

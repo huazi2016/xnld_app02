@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/dp_60"
+        android:paddingVertical="@dimen/dp_20"
+       style="@style/base_wrap_wrap"
+        android:orientation="vertical"
+        android:background="@drawable/four_loading_bg"
+        android:gravity="center">
+        <ProgressBar
+            style="@style/base_wrap_wrap"
+            android:indeterminateDrawable="@drawable/progress_loading_bg"
+            android:indeterminateOnly="true"
+            android:indeterminateBehavior="repeat"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+           style="@style/base_wrap_wrap"
+            android:text="请耐心等待"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+</LinearLayout>

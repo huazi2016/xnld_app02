@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="近期使用" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/r_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_empty"
+            style="@style/base_wrap_wrap"
+            android:layout_centerInParent="true"
+            android:drawableTop="@mipmap/empty"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/greyDivider"
+            android:textSize="@dimen/tv_descript"
+           />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_later"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

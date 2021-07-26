@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/base_match_match"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <View
+        style="@style/status_view_style"
+        android:background="@color/title_color" />
+
+    <RelativeLayout
+        android:id="@+id/lin_top"
+        style="@style/base_match_wrap"
+        android:background="@color/title_color">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/base_wrap_wrap"
+            android:layout_centerInParent="true"
+            android:paddingVertical="@dimen/dp_15"
+            android:text="个人中心"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_second_title" />
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            style="@style/base_wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_15"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:src="@mipmap/icn_user_info"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_head_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:src="@mipmap/header" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:letterSpacing="0.05"
+                        android:text="点击登录"
+                        android:textColor="#CCB567"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_vip_mark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/download_center_not_vip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:letterSpacing="0.05"
+                    android:id="@+id/tv_hint_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开通vip,享更多特权"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rr_vip"
+        android:background="@drawable/bg_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/bg_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/vip_font"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"/>
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/size_16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="开通VIP,体验更多权限"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/line_pay_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/vip_user_bg"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/user_info_open_vip_default_ic" />
+
+                        <TextView
+                            android:id="@+id/tv_vip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="6dp"
+                            android:text="开通会员"
+                            android:textColor="#A55E29"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:visibility="gone"
+       android:orientation="vertical"
+       android:id="@+id/line_bg"
+       android:background="@color/colorPrimary"
+       android:layout_width="match_parent"
+       android:layout_height="30dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        style="@style/base_match_match">
+
+        <LinearLayout
+            android:id="@+id/linearView"
+            style="@style/base_match_match"
+            android:layout_marginTop="@dimen/dp_30"
+            android:orientation="vertical">
+
+            <com.qmuiteam.qmui.layout.QMUIFrameLayout
+                android:id="@+id/tv_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/white"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:visibility="gone"
+                app:qmui_radius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/line_invitation_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/chengyuan"
+                        app:tint="#313131" />
+
+                    <TextView
+                        android:id="@+id/tv_invitation_list"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="分享好友"
+                        android:textColor="#313131"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/more_1x"
+                        app:tint="#313131" />
+                </LinearLayout>
+
+            </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+
+            <com.qmuiteam.qmui.layout.QMUIFrameLayout
+                android:id="@+id/tv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/white"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:qmui_radius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/icon_feedback"
+                        app:tint="#313131" />
+
+                    <TextView
+                        android:id="@+id/tv_more_feedback"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="意见反馈"
+                        android:textColor="#313131"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/more_1x"
+                        app:tint="#313131" />
+                </LinearLayout>
+            </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+
+            <com.qmuiteam.qmui.layout.QMUIFrameLayout
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/white"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:qmui_radius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/icon_about"
+                        app:tint="#313131" />
+
+                    <TextView
+                        android:id="@+id/tv_more_about"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="关于我们"
+                        android:textColor="#313131"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/more_1x"
+                        app:tint="#313131" />
+                </LinearLayout>
+
+            </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+
+
+            <com.qmuiteam.qmui.layout.QMUIFrameLayout
+                android:id="@+id/tv_good"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/white"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:qmui_radius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/icon_click_good"
+                        app:tint="#313131" />
+
+                    <TextView
+                        android:id="@+id/tv_more_good"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="给个好评"
+                        android:textColor="#313131"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/more_1x"
+                        app:tint="#313131" />
+                </LinearLayout>
+
+            </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+
+            <com.qmuiteam.qmui.layout.QMUIFrameLayout
+                android:id="@+id/tv_kefu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/white"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:qmui_radius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/kefu"
+                        app:tint="#313131" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="联系客服"
+                        android:textColor="#313131"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/more_1x"
+                        app:tint="#313131" />
+                </LinearLayout>
+
+            </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+
+            <com.qmuiteam.qmui.layout.QMUIFrameLayout
+                android:id="@+id/tv_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/white"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:qmui_radius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/xieyi"
+                        app:tint="#313131" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="用户协议"
+                        android:textColor="#313131"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/more_1x"
+                        app:tint="#313131" />
+                </LinearLayout>
+
+            </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+
+            <com.qmuiteam.qmui.layout.QMUIFrameLayout
+                android:id="@+id/tv_secrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/white"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:qmui_radius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/xieyi"
+                        app:tint="#313131" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="隐私政策"
+                        android:textColor="#313131"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/more_1x"
+                        app:tint="#313131" />
+                </LinearLayout>
+
+            </com.qmuiteam.qmui.layout.QMUIFrameLayout>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/tv_exit_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="退出登录"
+                android:textColor="#F44336"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:qmui_borderColor="#F44336"
+                app:qmui_radius="4dp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

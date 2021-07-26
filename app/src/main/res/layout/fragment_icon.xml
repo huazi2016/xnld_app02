@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        style="@style/status_view_style"
+        android:background="@color/title_color" />
+
+    <RelativeLayout
+        android:id="@+id/lin_top"
+        style="@style/base_match_wrap"
+        android:background="@color/title_color">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/base_wrap_wrap"
+            android:layout_centerInParent="true"
+            android:paddingVertical="@dimen/dp_15"
+            android:text="模拟来电"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_second_title" />
+
+        <ImageView
+            android:id="@+id/ivHelp"
+            style="@style/base_wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_15"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:src="@mipmap/icon_help"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcHomeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:text="开始模拟"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+         android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/c_806200EE"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30" />
+
+</LinearLayout>

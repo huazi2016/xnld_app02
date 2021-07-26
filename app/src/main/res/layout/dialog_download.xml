@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+<!--    android:background="@mipmap/gt_download_bg"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_white_bg8"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableTop="@mipmap/icn_update"
+           style="@style/base_wrap_wrap"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="升级到新版本"
+            android:textColor="#000000"
+            android:textSize="@dimen/tv_descript" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="v3.2.0"
+            android:textColor="#000000"
+            android:textSize="@dimen/tv_descript" />
+
+        <TextView
+            android:id="@+id/tv_update_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="60dp"
+            android:text="多处功能优化，体验更流畅，服务更稳定，马上更新吧！"
+            android:textColor="#333333"
+            android:textSize="@dimen/tv_descript" />
+
+        <com.zxqy.xunilaidian.utils.NumberProgressBar
+            android:id="@+id/number_progressBar"
+            style="@style/UpdateAppNumberProgressBar_Red"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:paddingHorizontal="@dimen/dp_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.zxqy.xunilaidian.view.PressedTextView
+                android:id="@+id/tv_cancel"
+                style="@style/base_0_wrap"
+                android:layout_weight="1"
+                android:background="@drawable/btn_update_cancle"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_10"
+                android:text="暂不更新"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/tv_descript" />
+
+            <com.zxqy.xunilaidian.view.PressedTextView
+                android:id="@+id/tv_update"
+                style="@style/base_0_wrap"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dp_10"
+             android:paddingVertical="@dimen/dp_10"
+                android:background="@drawable/bg_round_above"
+                android:gravity="center"
+                android:text="马上更新"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/tv_descript" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_update"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="5dp"
+        android:src="@mipmap/download_gb"
+        android:visibility="gone"/>
+</LinearLayout>
+

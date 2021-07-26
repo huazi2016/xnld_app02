@@ -1,0 +1,137 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--以下基本设置 四种宽高 -->
+   <!-- <style name="base_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/public_title_height</item>
+    </style>-->
+    <!--以下基本设置 四种宽高 -->
+    <style name="base_match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="base_wrap_img">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="base_wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="base_wrap_tx">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="base_match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="base_0_match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="base_0_wrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="base_wrap_0">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="base_match_0">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!--以上基本设置 四种宽高 -->
+
+
+    <!-- 横线 风格 -->
+    <style name="line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_line</item>
+    </style>
+
+    <style name="root_view_style" parent="base_match_match">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="root_view_style_white" parent="root_view_style">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--
+    状态栏占位View 样式
+    -->
+    <style name="status_view_style">
+        <item name="android:layout_height">@dimen/dp_25</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <!--检查更新弹框样式-->
+    <style name="DialogTransparent" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowIsFloating">true</item>    <!--是否浮在界面上-->
+        <item name="android:windowIsTranslucent">true</item> <!--是否半透明-->
+        <item name="android:windowNoTitle">false</item>       <!--是否有标题-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--窗口背景色透明-->
+        <item name="android:backgroundDimEnabled">true</item> <!--背景是否模糊显示-->
+
+    </style>
+    <!--检查更新弹框样式-->
+    <style name="dialog_center" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowIsFloating">true</item>    <!--是否浮在界面上-->
+        <item name="android:windowIsTranslucent">true</item> <!--是否半透明-->
+        <item name="android:windowNoTitle">false</item>       <!--是否有标题-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--窗口背景色透明-->
+        <item name="android:backgroundDimEnabled">true</item> <!--背景是否模糊显示-->
+
+    </style>
+    <style name="UpdateAppNumberProgressBar_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">@color/gt_progress_unreached_color</item>
+        <item name="progress_reached_color">@color/gt_progress_reached_color</item>
+        <item name="progress_text_size">@dimen/gt_progress_text_size</item>
+        <item name="progress_text_color">@color/gt_progress_text_color</item>
+        <item name="progress_reached_bar_height">@dimen/gt_progress_reached_bar_height</item>
+        <item name="progress_unreached_bar_height">@dimen/gt_progress_unreached_bar_height</item>
+    </style>
+
+    <style name="AgreementDialog" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在悬浮Activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影  -->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <!-- 点外边可以消失  -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item> <!--窗口背景色透明-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_alpha_out</item>
+        <item name="android:windowExitAnimation">@anim/popup_alpha_in</item>
+    </style>
+</resources>
