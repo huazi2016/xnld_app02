@@ -18,6 +18,7 @@ import com.lxj.xpopup.XPopup;
 import com.lxj.xpopup.interfaces.OnSelectListener;
 import com.zxqy.xunilaidian.R;
 import com.zxqy.xunilaidian.activity.CallPageActivity;
+import com.zxqy.xunilaidian.activity.CallerInfoActivity;
 import com.zxqy.xunilaidian.base.BaseFragment;
 import com.zxqy.xunilaidian.entity.CallItemEntity;
 import com.zxqy.xunilaidian.utils.ToastUtils;
@@ -151,6 +152,7 @@ public class HomeFragment extends BaseFragment {
                 public void onClick(View view) {
                     switch (itemBo.itemId) {
                         case 0: {
+                            //时间
                             new XPopup.Builder(getContext())
                                     //.maxHeight(800)
                                     .isDarkTheme(false)
@@ -166,7 +168,8 @@ public class HomeFragment extends BaseFragment {
                             break;
                         }
                         case 1: {
-                            Toast.makeText(mContext, "02", Toast.LENGTH_SHORT).show();
+                            //来电者
+                            CallerInfoActivity.launchActivity(context);
                             break;
                         }
                         case 2: {

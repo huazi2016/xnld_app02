@@ -137,6 +137,11 @@
             android:label="登录页面"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".activity.CallerInfoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="登录页面"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.FeedBackListActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:label="用户反馈"

@@ -57,4 +57,14 @@
     </style>
 
     <style name="progressBarHorizontalStyle" parent="Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <style name="editText_style02">
+        <item name="android:textColor">@color/text_10</item>
+        <item name="android:textColorHint">#999999</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/shape_0f1e45_cor4</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>
